@@ -205,7 +205,7 @@ The units are intended to share source between modern Delphi and FreePascal in D
 
 ## Support Resilience4D
 
-If you find WebSocket4D useful, please consider supporting its continued development with a voluntary cryptocurrency donation.
+If you find Resilience4D useful, please consider supporting its continued development with a voluntary cryptocurrency donation.
 
 Your support helps me maintain the library, improve its documentation and examples, fix bugs, and develop new features.
 
