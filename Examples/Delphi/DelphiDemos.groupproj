@@ -1,0 +1,156 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0746D106-B9C2-42BA-A7C0-281D28352032}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="01_RetryAndBackoff\RetryAndBackoff.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="02_CircuitBreaker\CircuitBreaker.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="03_TimeoutAndCancellation\TimeoutAndCancellation.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="04_RateAndConcurrency\RateAndConcurrency.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="05_LoggingAndContext\LoggingAndContext.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="06_FallbackCache\FallbackCache.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="07_ConcurrencyLimit\ConcurrencyLimit.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="08_Metrics\Metrics.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="09_TTLCache\TTLCache.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="10_PolicyRegistry\PolicyRegistry.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="11_StandaloneRetry\StandaloneRetry.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="RetryAndBackoff">
+        <MSBuild Projects="01_RetryAndBackoff\RetryAndBackoff.dproj"/>
+    </Target>
+    <Target Name="RetryAndBackoff:Clean">
+        <MSBuild Projects="01_RetryAndBackoff\RetryAndBackoff.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RetryAndBackoff:Make">
+        <MSBuild Projects="01_RetryAndBackoff\RetryAndBackoff.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CircuitBreaker">
+        <MSBuild Projects="02_CircuitBreaker\CircuitBreaker.dproj"/>
+    </Target>
+    <Target Name="CircuitBreaker:Clean">
+        <MSBuild Projects="02_CircuitBreaker\CircuitBreaker.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CircuitBreaker:Make">
+        <MSBuild Projects="02_CircuitBreaker\CircuitBreaker.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TimeoutAndCancellation">
+        <MSBuild Projects="03_TimeoutAndCancellation\TimeoutAndCancellation.dproj"/>
+    </Target>
+    <Target Name="TimeoutAndCancellation:Clean">
+        <MSBuild Projects="03_TimeoutAndCancellation\TimeoutAndCancellation.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TimeoutAndCancellation:Make">
+        <MSBuild Projects="03_TimeoutAndCancellation\TimeoutAndCancellation.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RateAndConcurrency">
+        <MSBuild Projects="04_RateAndConcurrency\RateAndConcurrency.dproj"/>
+    </Target>
+    <Target Name="RateAndConcurrency:Clean">
+        <MSBuild Projects="04_RateAndConcurrency\RateAndConcurrency.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RateAndConcurrency:Make">
+        <MSBuild Projects="04_RateAndConcurrency\RateAndConcurrency.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LoggingAndContext">
+        <MSBuild Projects="05_LoggingAndContext\LoggingAndContext.dproj"/>
+    </Target>
+    <Target Name="LoggingAndContext:Clean">
+        <MSBuild Projects="05_LoggingAndContext\LoggingAndContext.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LoggingAndContext:Make">
+        <MSBuild Projects="05_LoggingAndContext\LoggingAndContext.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FallbackCache">
+        <MSBuild Projects="06_FallbackCache\FallbackCache.dproj"/>
+    </Target>
+    <Target Name="FallbackCache:Clean">
+        <MSBuild Projects="06_FallbackCache\FallbackCache.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FallbackCache:Make">
+        <MSBuild Projects="06_FallbackCache\FallbackCache.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ConcurrencyLimit">
+        <MSBuild Projects="07_ConcurrencyLimit\ConcurrencyLimit.dproj"/>
+    </Target>
+    <Target Name="ConcurrencyLimit:Clean">
+        <MSBuild Projects="07_ConcurrencyLimit\ConcurrencyLimit.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ConcurrencyLimit:Make">
+        <MSBuild Projects="07_ConcurrencyLimit\ConcurrencyLimit.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Metrics">
+        <MSBuild Projects="08_Metrics\Metrics.dproj"/>
+    </Target>
+    <Target Name="Metrics:Clean">
+        <MSBuild Projects="08_Metrics\Metrics.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Metrics:Make">
+        <MSBuild Projects="08_Metrics\Metrics.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TTLCache">
+        <MSBuild Projects="09_TTLCache\TTLCache.dproj"/>
+    </Target>
+    <Target Name="TTLCache:Clean">
+        <MSBuild Projects="09_TTLCache\TTLCache.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TTLCache:Make">
+        <MSBuild Projects="09_TTLCache\TTLCache.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PolicyRegistry">
+        <MSBuild Projects="10_PolicyRegistry\PolicyRegistry.dproj"/>
+    </Target>
+    <Target Name="PolicyRegistry:Clean">
+        <MSBuild Projects="10_PolicyRegistry\PolicyRegistry.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PolicyRegistry:Make">
+        <MSBuild Projects="10_PolicyRegistry\PolicyRegistry.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="StandaloneRetry">
+        <MSBuild Projects="11_StandaloneRetry\StandaloneRetry.dproj"/>
+    </Target>
+    <Target Name="StandaloneRetry:Clean">
+        <MSBuild Projects="11_StandaloneRetry\StandaloneRetry.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="StandaloneRetry:Make">
+        <MSBuild Projects="11_StandaloneRetry\StandaloneRetry.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="RetryAndBackoff;CircuitBreaker;TimeoutAndCancellation;RateAndConcurrency;LoggingAndContext;FallbackCache;ConcurrencyLimit;Metrics;TTLCache;PolicyRegistry;StandaloneRetry"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="RetryAndBackoff:Clean;CircuitBreaker:Clean;TimeoutAndCancellation:Clean;RateAndConcurrency:Clean;LoggingAndContext:Clean;FallbackCache:Clean;ConcurrencyLimit:Clean;Metrics:Clean;TTLCache:Clean;PolicyRegistry:Clean;StandaloneRetry:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="RetryAndBackoff:Make;CircuitBreaker:Make;TimeoutAndCancellation:Make;RateAndConcurrency:Make;LoggingAndContext:Make;FallbackCache:Make;ConcurrencyLimit:Make;Metrics:Make;TTLCache:Make;PolicyRegistry:Make;StandaloneRetry:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

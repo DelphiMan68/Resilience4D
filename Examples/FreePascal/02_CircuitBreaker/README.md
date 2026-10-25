@@ -1,0 +1,53 @@
+# CircuitBreaker — Circuit Breaker and Fallback (FreePascal)
+
+## Purpose
+
+Demonstrates a policy facing an unavailable dependency, opening its circuit after consecutive failures, and attempting a fallback callback that simulates serving a stale cached response.
+
+## What this example demonstrates
+
+- `CircuitFailureThreshold` controls how many failures are needed before the circuit opens.
+- `CircuitOpenDurationMS` sets how long the circuit remains open before a later call may probe recovery.
+- A fallback is a separate callback and should only return degraded data when that is safe for the application.
+
+## Requirements
+
+- FreePascal Compiler (FPC) with the RTL units used by the example. The `-Mdelphi` switch enables Delphi-compatible syntax.
+- The Resilience4D source units in the repository `src/` directory.
+
+## Build and run
+
+From the repository root, compile with:
+
+```sh
+mkdir -p build
+fpc -Mdelphi -Fu./src -FE./build ./Examples/FreePascal/02_CircuitBreaker/CircuitBreaker.lpr
+```
+
+Run the resulting program (on Windows, use the generated `.exe`):
+
+```sh
+./build/CircuitBreaker
+```
+
+## Expected behavior
+
+The console output is intended to show the behavior described above. Exact output can vary with timing, compiler version, and jitter. Treat the output as illustrative rather than as a strict automated assertion.
+
+## Important notes and limitations
+
+The demo performs four calls quickly, so the circuit may remain open for subsequent requests. The printed circuit state is an ordinal value, not a user-friendly state name. The fallback is illustrative; it does not connect to a real cache.
+
+## Source file
+
+- `CircuitBreaker.lpr` — the complete standalone console program for this example.
+
+## Related documentation
+
+- [`../../../README.md`](../../../README.md) — project overview and quick start.
+- [`../../../docs/FEATURES.md`](../../../docs/FEATURES.md) — feature overview.
+- [`../../../docs/guides/PRODUCTION_GUIDE.md`](../../../docs/guides/PRODUCTION_GUIDE.md) — production considerations.
+
+## Compatibility status
+
+The project archive and folder structure can be validated independently of compiler compatibility. Compile this example with the exact compiler version and target platform you plan to support before relying on it in production.
